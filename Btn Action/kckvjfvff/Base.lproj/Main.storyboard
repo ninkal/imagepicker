@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QJd-fR-udV">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="kckvjfvff" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vc6-fD-oBE">
+                                <rect key="frame" x="141" y="114" width="123" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="0VC-x1-k8D"/>
+                                </constraints>
+                                <state key="normal" title="Check IN"/>
+                                <connections>
+                                    <action selector="btnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fmm-Mp-mQg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7iQ-95-H1h">
+                                <rect key="frame" x="141" y="184" width="123" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="XF8-H0-APw"/>
+                                </constraints>
+                                <state key="normal" title="CheckOut"/>
+                                <connections>
+                                    <action selector="btn111Action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cSJ-Nm-qf4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="7iQ-95-H1h" firstAttribute="top" secondItem="vc6-fD-oBE" secondAttribute="bottom" constant="40" id="2jI-hk-DDy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vc6-fD-oBE" secondAttribute="trailing" constant="150" id="7Gd-Cl-7Cb"/>
+                            <constraint firstItem="vc6-fD-oBE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="141" id="9Ae-Dy-Yk4"/>
+                            <constraint firstItem="7iQ-95-H1h" firstAttribute="trailing" secondItem="vc6-fD-oBE" secondAttribute="trailing" id="EzI-N6-SqB"/>
+                            <constraint firstItem="vc6-fD-oBE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="JSA-Ut-FEp"/>
+                            <constraint firstItem="7iQ-95-H1h" firstAttribute="leading" secondItem="vc6-fD-oBE" secondAttribute="leading" id="ft5-vd-c61"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="BIW-mz-ddk"/>
+                    <connections>
+                        <outlet property="btn" destination="vc6-fD-oBE" id="vxL-bJ-r2i"/>
+                        <outlet property="btn1111" destination="7iQ-95-H1h" id="qky-jA-fZr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="118.52678571428571"/>
+        </scene>
+        <!--Sec View Controler-->
+        <scene sceneID="lgT-so-Pfv">
+            <objects>
+                <viewController storyboardIdentifier="SecViewControler" useStoryboardIdentifierAsRestorationIdentifier="YES" id="frW-FA-bbC" customClass="SecViewControler" customModule="kckvjfvff" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pf3-XP-lzc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WbV-NM-vBN">
+                                <rect key="frame" x="170" y="137" width="144" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ipP-8v-LcU"/>
+                                </constraints>
+                                <state key="normal" title="Check In"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e7O-Qq-et0">
+                                <rect key="frame" x="170" y="215" width="144" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="VyZ-ZB-sdZ"/>
+                                </constraints>
+                                <state key="normal" title="Check Out"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="e7O-Qq-et0" firstAttribute="top" secondItem="WbV-NM-vBN" secondAttribute="bottom" constant="48" id="3Qv-3f-Z2b"/>
+                            <constraint firstItem="WbV-NM-vBN" firstAttribute="top" secondItem="9VU-ty-NaK" secondAttribute="top" constant="93" id="IAs-dh-KYZ"/>
+                            <constraint firstItem="e7O-Qq-et0" firstAttribute="leading" secondItem="9VU-ty-NaK" secondAttribute="leading" constant="170" id="JCj-Ht-FIx"/>
+                            <constraint firstItem="9VU-ty-NaK" firstAttribute="trailing" secondItem="e7O-Qq-et0" secondAttribute="trailing" constant="100" id="JY4-sb-ydq"/>
+                            <constraint firstItem="9VU-ty-NaK" firstAttribute="trailing" secondItem="WbV-NM-vBN" secondAttribute="trailing" constant="100" id="eDG-ir-nKB"/>
+                            <constraint firstItem="WbV-NM-vBN" firstAttribute="leading" secondItem="9VU-ty-NaK" secondAttribute="leading" constant="170" id="p9N-dw-BMc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9VU-ty-NaK"/>
+                    </view>
+                    <connections>
+                        <outlet property="btn1" destination="WbV-NM-vBN" id="I4N-X6-yIS"/>
+                        <outlet property="btn2" destination="e7O-Qq-et0" id="Wdy-4o-Jpz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gbC-iM-9g5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1739.1304347826087" y="112.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="vsZ-OP-gAy">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="QJd-fR-udV" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="lXD-45-gNV">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="4xc-4V-bwy"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ug6-wy-abJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="118.52678571428571"/>
+        </scene>
+    </scenes>
+</document>
